@@ -1,0 +1,183 @@
+@import  "nullstyle.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgba(171, 160, 217, 0.7);
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.sidebar {
+  height: 100%;
+  min-width: 320px;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(150, 123, 182, 0.8);
+  overflow-x: hidden;
+  padding: 20px;
+  letter-spacing: 0.9px;
+	&__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	}
+	&__info-photo {
+    border-radius: 50%;
+    border: 3px solid rgb(89,70,178);
+	}
+	&__info-name {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 15px 0;
+	}
+	&__info-role {
+    padding: 0 0 15px;
+	}
+	&__menu {
+    margin: 15px 0 0 25px;
+	}
+	&__menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 0 0 10px 0;
+    img {
+      margin: 0 5px;
+      width: 30px;
+    }
+	}
+}
+
+.main {
+  margin: 0 0 0 320px;
+  padding: 0 30px;
+}
+
+.title {
+  padding: 20px 0 0 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.about {
+  &__title {
+  }
+  &__text {
+    padding: 20px 0 0 0;
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+.contacts {
+  &__title {
+  }
+  &__list {
+    padding: 20px 0 0 0;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  &__item {
+    margin: 8px 0 0 0;
+    img {
+      margin: 0 5px;
+      width: 30px;
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+}
+
+.experience {
+  &__title {
+  }
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 0 0 0;
+    a {
+      font-style: italic;
+      font-weight: 700;
+    }
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__exemple {
+    position: relative;
+    margin: 30px 0 0 0;
+    display: flex;
+    flex: 50%;
+  }
+  &__exemple-img {
+    margin: 0 10px 0 0;
+    border: 2px solid rgb(89,70,178);
+    border-radius: 10px;
+  }
+  &__exemple-title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__exemple-description {
+    font-size: 14px;
+    padding: 10px 0 0;
+  }
+  &__exemple-language {
+    border: 1px solid rgb(89,70,178);
+    border-radius: 10px;
+  }
+  &__exemple-btn {
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid rgb(89,70,178);
+    border-radius: 40px;
+    background-color: rgba(150, 123, 182, 0.8);
+    font-weight: 700;
+    font-size: 12px;
+    position: absolute;
+    top: 72px;
+  }
+}
+
+.education {
+  &__title {
+  }
+  &__description {
+    margin: 25px 0 0 0;
+  }
+  &__description-title {
+    font-size: 18px;
+  }
+  &__description-text {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+  &__description-certificate {
+    font-size: 16px;
+    img {
+      width: 23px;
+    }
+  }
+}
+
+
+
+
