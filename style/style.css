@@ -130,7 +130,7 @@ a {
 }
 
 .sidebar__menu {
-  margin: 15px 0 0 25px;
+  margin: 25px 0 0 60px;
 }
 
 .sidebar__menu-item {
@@ -140,8 +140,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 16px;
-  padding: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 0 15px 0;
 }
 
 .sidebar__menu-item img {
@@ -155,19 +156,40 @@ a {
 }
 
 .title {
-  padding: 20px 0 0 0;
-  font-size: 24px;
+  padding: 30px 0 10px 0;
+  font-size: 26px;
   font-weight: 700;
 }
 
+.title::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 16px;
+  height: 14px;
+  -webkit-transform: skew(-12deg) translateX(-50%);
+          transform: skew(-12deg) translateX(-50%);
+  z-index: -1;
+}
+
+.about__title::after {
+  left: 55px;
+  width: 140px;
+  background: rgba(238, 111, 87, 0.5);
+}
+
 .about__text {
-  padding: 20px 0 0 0;
   font-size: 16px;
   line-height: 23px;
 }
 
+.contacts__title::after {
+  left: 55px;
+  width: 130px;
+  background: rgba(56, 151, 110, 0.5);
+}
+
 .contacts__list {
-  padding: 20px 0 0 0;
   font-size: 16px;
   line-height: 23px;
 }
@@ -177,7 +199,7 @@ a {
 }
 
 .contacts__item img {
-  margin: 0 5px;
+  margin: -5px 5px 0;
   width: 30px;
 }
 
@@ -185,10 +207,15 @@ a {
   color: inherit;
 }
 
+.experience__title::after {
+  left: 65px;
+  width: 160px;
+  background: rgba(254, 191, 16, 0.6);
+}
+
 .experience__description {
   font-size: 16px;
   line-height: 24px;
-  padding: 20px 0 0 0;
 }
 
 .experience__description a {
@@ -241,6 +268,7 @@ a {
   width: 100px;
   text-align: center;
   padding: 8px;
+  color: #FFFFFF;
   border: 1px solid #5946b2;
   border-radius: 40px;
   background-color: rgba(150, 123, 182, 0.8);
@@ -250,12 +278,25 @@ a {
   top: 72px;
 }
 
+.education__title {
+  padding: 30px 0 0 0;
+}
+
+.education__title::after {
+  left: 60px;
+  width: 140px;
+  background: rgba(30, 144, 255, 0.5);
+}
+
 .education__description {
-  margin: 25px 0 0 0;
+  max-width: 550px;
+  padding: 15px 0;
+  border-bottom: 2px dashed #FFFFFF;
 }
 
 .education__description-title {
   font-size: 18px;
+  font-weight: 700;
 }
 
 .education__description-text {
@@ -269,5 +310,32 @@ a {
 
 .education__description-certificate img {
   width: 23px;
+}
+
+.skills__title::after {
+  left: 30px;
+  width: 80px;
+  background: rgba(204, 0, 0, 0.5);
+}
+
+.skills__list {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills__item {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  padding: 0 0 15px 0;
+}
+
+.skills__item img {
+  margin: -2px 0 0 5px;
+  width: 20px;
 }
 /*# sourceMappingURL=style.css.map */

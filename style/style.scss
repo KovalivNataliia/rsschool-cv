@@ -48,13 +48,14 @@ a {
     padding: 0 0 15px;
 	}
 	&__menu {
-    margin: 15px 0 0 25px;
+    margin: 25px 0 0 60px;
 	}
 	&__menu-item {
     display: flex;
     align-items: center;
-    font-size: 16px;
-    padding: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 0 15px 0;
     img {
       margin: 0 5px;
       width: 30px;
@@ -68,33 +69,47 @@ a {
 }
 
 .title {
-  padding: 20px 0 0 0;
-  font-size: 24px;
+  padding: 30px 0 10px 0;
+  font-size: 26px;
   font-weight: 700;
 }
 
+.title::after{
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 16px;
+  height: 14px;
+  transform: skew(-12deg) translateX(-50%);
+  z-index: -1;
+}
+
 .about {
-  &__title {
+  &__title::after {
+    left: 55px;
+    width: 140px;
+    background: rgba(238,111,87,0.5);
   }
   &__text {
-    padding: 20px 0 0 0;
     font-size: 16px;
     line-height: 23px;
   }
 }
 
 .contacts {
-  &__title {
+  &__title::after {
+    left: 55px;
+    width: 130px;
+    background: rgba(56, 151, 110, 0.5);
   }
   &__list {
-    padding: 20px 0 0 0;
     font-size: 16px;
     line-height: 23px;
   }
   &__item {
     margin: 8px 0 0 0;
     img {
-      margin: 0 5px;
+      margin: -5px 5px 0;
       width: 30px;
     }
   }
@@ -104,12 +119,14 @@ a {
 }
 
 .experience {
-  &__title {
+  &__title::after {
+    left: 65px;
+    width: 160px;
+    background: rgba(254, 191, 16, 0.6);
   }
   &__description {
     font-size: 16px;
     line-height: 24px;
-    padding: 20px 0 0 0;
     a {
       font-style: italic;
       font-weight: 700;
@@ -147,6 +164,7 @@ a {
     width: 100px;
     text-align: center;
     padding: 8px;
+    color: #FFFFFF;
     border: 1px solid rgb(89,70,178);
     border-radius: 40px;
     background-color: rgba(150, 123, 182, 0.8);
@@ -159,12 +177,21 @@ a {
 
 .education {
   &__title {
+    padding: 30px 0 0 0;
+  }
+  &__title::after {
+    left: 60px;
+    width: 140px;
+    background: rgba(30, 144, 255, 0.5);
   }
   &__description {
-    margin: 25px 0 0 0;
+    max-width: 550px;
+    padding: 15px 0;
+    border-bottom: 2px dashed #FFFFFF;
   }
   &__description-title {
     font-size: 18px;
+    font-weight: 700;
   }
   &__description-text {
     margin: 8px 0;
@@ -178,6 +205,26 @@ a {
   }
 }
 
+.skills {
+  &__title::after {
+    left: 30px;
+    width: 80px;
+    background: rgba(204, 0, 0, 0.5);
+  }
+  &__list {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    flex: 50%;
+    padding: 0 0 15px 0;
+    img {
+      margin: -2px 0 0 5px;
+      width: 20px;
+    }
+  }
+}
 
 
 
