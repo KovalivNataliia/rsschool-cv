@@ -96,7 +96,7 @@ a {
   position: fixed;
   z-index: 1;
   background-color: rgba(150, 123, 182, 0.8);
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 20px;
   letter-spacing: 0.9px;
 }
@@ -207,10 +207,49 @@ a {
   color: inherit;
 }
 
+.skills__title::after {
+  left: 30px;
+  width: 80px;
+  background: rgba(254, 191, 16, 0.6);
+}
+
+.skills__list {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .skills__list {
+    font-size: 13px;
+  }
+}
+
+.skills__item {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  padding: 0 0 15px 0;
+}
+
+.skills__item img {
+  margin: -2px 0 0 5px;
+  width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .skills__item img {
+    width: 15px;
+  }
+}
+
 .experience__title::after {
   left: 65px;
   width: 160px;
-  background: rgba(254, 191, 16, 0.6);
+  background: rgba(30, 144, 255, 0.5);
 }
 
 .experience__description {
@@ -278,6 +317,33 @@ a {
   top: 72px;
 }
 
+.experience__codewars {
+  padding: 50px 0 0 0;
+}
+
+.experience__codewars a {
+  font-weight: 700;
+}
+
+.experience__codewars-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.experience__codewars-text img {
+  width: 25px;
+  margin: -3px 0 0 5px;
+}
+
+.experience__codewars-img {
+  margin: 20px 0;
+}
+
+.experience__codewars-code code {
+  border-radius: 25px;
+  max-width: 550px;
+}
+
 .education__title {
   padding: 30px 0 0 0;
 }
@@ -285,7 +351,7 @@ a {
 .education__title::after {
   left: 60px;
   width: 140px;
-  background: rgba(30, 144, 255, 0.5);
+  background: rgba(204, 0, 0, 0.5);
 }
 
 .education__description {
@@ -310,32 +376,5 @@ a {
 
 .education__description-certificate img {
   width: 23px;
-}
-
-.skills__title::after {
-  left: 30px;
-  width: 80px;
-  background: rgba(204, 0, 0, 0.5);
-}
-
-.skills__list {
-  font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.skills__item {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  padding: 0 0 15px 0;
-}
-
-.skills__item img {
-  margin: -2px 0 0 5px;
-  width: 20px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -27,7 +27,7 @@ a {
   position: fixed;
   z-index: 1;
   background-color: rgba(150, 123, 182, 0.8);
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 20px;
   letter-spacing: 0.9px;
 	&__info {
@@ -118,11 +118,38 @@ a {
   }
 }
 
+.skills {
+  &__title::after {
+    left: 30px;
+    width: 80px;
+    background: rgba(254, 191, 16, 0.6);
+  }
+  &__list {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+      font-size: 13px;
+    }
+  }
+  &__item {
+    flex: 50%;
+    padding: 0 0 15px 0;
+    img {
+      margin: -2px 0 0 5px;
+      width: 20px;
+      @media screen and (max-width: 768px) {
+        width: 15px;
+      }
+    }
+  }
+}
+
 .experience {
   &__title::after {
     left: 65px;
     width: 160px;
-    background: rgba(254, 191, 16, 0.6);
+    background: rgba(30, 144, 255, 0.5);
   }
   &__description {
     font-size: 16px;
@@ -173,6 +200,29 @@ a {
     position: absolute;
     top: 72px;
   }
+  &__codewars {
+    padding: 50px 0 0 0;
+    a {
+      font-weight: 700;
+    }
+  }
+  &__codewars-text {
+    font-size: 16px;
+    line-height: 24px;
+    img {
+      width: 25px;
+      margin: -3px 0 0 5px;
+    }
+  }
+  &__codewars-img {
+    margin: 20px 0;
+  }
+  &__codewars-code {
+    code {
+      border-radius: 25px;
+      max-width: 550px;
+    }
+  }
 }
 
 .education {
@@ -182,7 +232,7 @@ a {
   &__title::after {
     left: 60px;
     width: 140px;
-    background: rgba(30, 144, 255, 0.5);
+    background: rgba(204, 0, 0, 0.5);
   }
   &__description {
     max-width: 550px;
@@ -201,27 +251,6 @@ a {
     font-size: 16px;
     img {
       width: 23px;
-    }
-  }
-}
-
-.skills {
-  &__title::after {
-    left: 30px;
-    width: 80px;
-    background: rgba(204, 0, 0, 0.5);
-  }
-  &__list {
-    font-size: 18px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  &__item {
-    flex: 50%;
-    padding: 0 0 15px 0;
-    img {
-      margin: -2px 0 0 5px;
-      width: 20px;
     }
   }
 }
