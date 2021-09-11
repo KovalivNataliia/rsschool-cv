@@ -96,7 +96,7 @@ a {
   position: fixed;
   z-index: 1;
   background-color: rgba(150, 123, 182, 0.8);
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 20px;
   letter-spacing: 0.9px;
 }
@@ -340,7 +340,7 @@ a {
 }
 
 .experience__codewars-code code {
-  border-radius: 25px;
+  border-radius: 10px;
   max-width: 550px;
 }
 
@@ -355,13 +355,18 @@ a {
 }
 
 .education__description {
-  max-width: 550px;
+  max-width: 605px;
   padding: 15px 0;
   border-bottom: 2px dashed #FFFFFF;
 }
 
+.education__description:last-child {
+  border-bottom: none;
+}
+
 .education__description-title {
   font-size: 18px;
+  line-height: 24px;
   font-weight: 700;
 }
 
@@ -376,5 +381,104 @@ a {
 
 .education__description-certificate img {
   width: 23px;
+}
+
+.languages__title::after {
+  left: 65px;
+  width: 160px;
+  background: rgba(116, 204, 207, 0.8);
+}
+
+.languages__list {
+  font-size: 18px;
+}
+
+.languages__item {
+  padding: 0 0 20px 0;
+}
+
+.languages__item span {
+  font-weight: 700;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 0 0 320px;
+  padding: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer__item-one::after {
+  left: 20px;
+  width: 60px;
+  background: rgba(204, 0, 0, 0.5);
+}
+
+.footer__item-two::after {
+  left: 85px;
+  width: 180px;
+  background: rgba(56, 151, 110, 0.5);
+}
+
+.footer__item-three img {
+  width: 40px;
+}
+
+.footer__item-three::after {
+  left: 20px;
+  width: 50px;
+  background: rgba(254, 191, 16, 0.6);
+}
+
+.footer__item-four::after {
+  left: 120px;
+  width: 255px;
+  background: rgba(30, 144, 255, 0.5);
+}
+
+.item {
+  padding: 10px 0 0 0;
+}
+
+.item::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 12px;
+  height: 12px;
+  -webkit-transform: skew(-12deg) translateX(-50%);
+          transform: skew(-12deg) translateX(-50%);
+  z-index: -1;
+}
+
+.wave {
+  margin: 0 0 0 320px;
+  padding: 5px 20px;
+  max-width: 635px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+  color: #c4bce4;
+}
+
+@media screen and (max-width: 768px) {
+  .wave {
+    max-width: 415px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
