@@ -21,8 +21,8 @@
         <h1 class="sidebar__info-name">Nataliia Kovaliv</h1>
         <h2 class="sidebar__info-role">FRONTEND DEVELOPER | LVIV</h2>
       </div>
-      <nav class="sidebar__menu">
-        <ul>
+      <nav>
+        <ul class="sidebar__menu">
           <li class="sidebar__menu-item"><img src="./img/me.png" alt="icon" ><a href="#about">About me</a></li>
           <li class="sidebar__menu-item"><img src="./img/phone.png" alt="icon" ><a href="#contacts">Contacts</a></li>
           <li class="sidebar__menu-item"><img src="./img/mouse.png" alt="icon" ><a href="#skills">Skills</a></li>
@@ -31,6 +31,7 @@
           <li class="sidebar__menu-item"><img src="./img/languages.png" alt="icon" ><a href="#languages">Languages</a></li>
         </ul>
       </nav>
+      <span class="sidebar__toggle">&#9776;</span>
     </aside>
     <main class="main">
       <section class="about" id="about">
@@ -192,6 +193,14 @@
       </div>
     </footer>
   </div>
+  <script>
+    let btn = document.querySelector('.sidebar__toggle');
+    let menu = document.querySelector('.sidebar__menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('active')
+    })
+  </script>
 </body>
 
 </html>

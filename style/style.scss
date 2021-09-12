@@ -19,6 +19,9 @@ a {
   max-width: 1000px;
   margin: 0 auto;
   font-weight: 400;
+  @media screen and (max-width: 425px) {
+    max-width: 320px;
+  }
 }
 
 .sidebar {
@@ -30,6 +33,16 @@ a {
   overflow-x: hidden;
   padding: 20px;
   letter-spacing: 0.9px;
+  @media screen and (max-width: 425px) {
+    min-width: 320px;
+    position: static;
+    padding: 20px 20px 0;
+    margin: 30px 0 0 0;
+    overflow-x: unset;
+  }
+  @media screen and (max-width: 320px) {
+    margin: 0;
+  }
 	&__info {
     display: flex;
     flex-direction: column;
@@ -49,23 +62,64 @@ a {
 	}
 	&__menu {
     margin: 25px 0 0 60px;
+    @media screen and (max-width: 425px) {
+      height: 0;
+      transition: height .4s linear;
+    }
 	}
+  &__menu.active {
+    height: 275px;
+    li {
+      opacity: 1;
+      visibility: visible;
+      transition: all 1.2s linear;
+    }
+  }
 	&__menu-item {
     display: flex;
     align-items: center;
     font-size: 18px;
     font-weight: 700;
     padding: 0 0 15px 0;
+    @media screen and (max-width: 425px) {
+      opacity: 0;
+      visibility: hidden;
+      transition: all .25s linear;
+    }
     img {
       margin: 0 5px;
       width: 30px;
     }
 	}
+  &__toggle {
+    visibility: hidden;
+    @media screen and (max-width: 425px) {
+      visibility: visible;
+      display: block;
+      text-align: center;
+      background-color: rgb(150, 123, 182);
+      min-width: 320px;
+      margin: 0 0 0 -20px;
+      padding: 15px 0;
+      height: 45px;
+    }
+  }
 }
+
+// .active {
+//   height: 100%;
+//   li {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+// }
 
 .main {
   margin: 0 0 0 320px;
   padding: 0 30px;
+  @media screen and (max-width: 425px) {
+    margin: 0;
+  }
 }
 
 .title {
@@ -92,7 +146,7 @@ a {
   }
   &__text {
     font-size: 16px;
-    line-height: 23px;
+    line-height: 24px;
   }
 }
 
@@ -111,6 +165,10 @@ a {
     img {
       margin: -5px 5px 0;
       width: 30px;
+      @media screen and (max-width: 425px) {
+        width: 25px;
+        margin: -3px 5px 0;
+      }
     }
   }
   &__link {
@@ -130,6 +188,11 @@ a {
     flex-wrap: wrap;
     @media screen and (max-width: 768px) {
       font-size: 13px;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 18px;
+      flex-direction: column;
+      flex-wrap: nowrap;
     }
   }
   &__item {
@@ -216,6 +279,9 @@ a {
   }
   &__codewars-img {
     margin: 20px 0;
+    @media screen and (max-width: 425px) {
+      width: 260px;
+    }
   }
   &__codewars-code {
     code {
@@ -285,6 +351,9 @@ a {
   padding: 30px;
   font-size: 16px;
   font-weight: 700;
+  @media screen and (max-width: 425px) {
+    margin: 0;
+  }
   &__item-one::after {
     left: 20px;
     width: 60px;
@@ -338,6 +407,10 @@ a {
   color: rgb(196, 188, 228);
   @media screen and (max-width: 768px) {
     max-width: 415px;
+  }
+  @media screen and (max-width: 425px) {
+    margin: 0;
+    max-width: 300px;
   }
 }
 
