@@ -7,145 +7,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Nataliia Kovaliv</title>
     <link rel="shortcut icon" href="./img/cat.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/paraiso-dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
-    <div class="container">
-        <header class="about">
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar__info">
+        <img src="./img/photo.png" alt="photo" class="sidebar__info-photo" width="180" height="180">
+        <h1 class="sidebar__info-name">Nataliia Kovaliv</h1>
+        <h2 class="sidebar__info-role">FRONTEND DEVELOPER | LVIV</h2>
+      </div>
+      <nav>
+        <ul class="sidebar__menu">
+          <li class="sidebar__menu-item"><img src="./img/me.png" alt="icon" ><a href="#about">About me</a></li>
+          <li class="sidebar__menu-item"><img src="./img/phone.png" alt="icon" ><a href="#contacts">Contacts</a></li>
+          <li class="sidebar__menu-item"><img src="./img/mouse.png" alt="icon" ><a href="#skills">Skills</a></li>
+          <li class="sidebar__menu-item"><img src="./img/experience.png" alt="icon" ><a href="#experience">Experience</a></li>
+          <li class="sidebar__menu-item"><img src="./img/education.png" alt="icon" ><a href="#education">Education</a></li>
+          <li class="sidebar__menu-item"><img src="./img/languages.png" alt="icon" ><a href="#languages">Languages</a></li>
+        </ul>
+      </nav>
+      <span class="sidebar__btn"><span class="line"></span></span>
+    </aside>
+    <main class="main">
+      <section class="about" id="about">
+        <h3 class="about__title title">About me</h3>
+        <p class="about__text">
+          I am a well-motivated, results-oriented and quick learner person, a beginner in JavaScript and web
+          development.
+          I don’t have an education in computer technologies, but I am open to new knowledge and challenges.
+          I am looking for a job with interesting tasks, where I can grow as a professional. I am ready to
+          work in a team and improve myself everyday.
+        </p>
+      </section>
+      <section class="contacts" id="contacts">
+        <h3 class="contacts__title title">Contacts</h3>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <img src="./img/cell-phone.png" alt="phone">
+            <a class="contacts__link" href="tel:+380633160073">+38 (063) 316 00 73</a>
+          </li>
+          <li class="contacts__item">
+            <img src="./img/mail.png" alt="mail">
+            <a class="contacts__link" href="mailto:nataliiakovaliv95@gmail.com">nataliiakovaliv95@gmail.com</a>
+          </li>
+          <li class="contacts__item">
+            <img src="./img/telegram.png" alt="telegram">
+            <a class="contacts__link" href="https://t.me/nataliia_kovaliv" target="_blank">Telegram</a>
+          </li>
+        </ul>
+      </section>
+      <section class="skills" id="skills">
+        <h3 class="skills__title title">Skills</h3>
+        <ul class="skills__list">
+          <li class="skills__item">HTML5/CSS3(SCSS)<img src="./img/tick.png" alt="icon"></li>
+          <li class="skills__item">JavaScript/basics of Python<img src="./img/tick.png" alt="icon"></li>
+          <li class="skills__item">Three.js<img src="./img/tick.png" alt="icon"></li>
+          <li class="skills__item">basics of React/Redux<img src="./img/tick.png" alt="icon"></li>
+          <li class="skills__item">Visual Studio Code<img src="./img/tick.png" alt="icon"></li>
+          <li class="skills__item">Photoshop/Figma<img src="./img/tick.png" alt="icon"></li>
+          <li class="skills__item">GIT<img src="./img/tick.png" alt="icon"></li>
+          <li class="skills__item">Postman<img src="./img/tick.png" alt="icon"></li>
+        </ul>
+      </section>
+      <section class="experience" id="experience">
+        <h3 class="experience__title title">Experience</h3>
+        <p class="experience__description">
+          I have no commercial experience, but you can look at my projects:
+        </p>
+        <div class="experience__row">
+          <div class="experience__exemple">
             <div>
-                <h1 class="about__name">Nataliia Kovaliv</h1>
-                <div class="about__role">FRONTEND DEVELOPER | LVIV</div>
-                <p class="about__text">
-                    I am a well-motivated, results-oriented and quick learner person, a beginner in JavaScript and web
-                    development.
-                    I don’t have an education in computer technologies, but I open to new knowledge and challenges.
-                    I am looking for a job with interesting tasks, where I can grow as a professional. I am ready to
-                    work in a team and improve myself everyday.
-                </p>
+              <a href="https://kovalivnataliia.github.io/luxestate/" target="_blank"><img src="./img/exemple1.png" alt="exemple" class="experience__exemple-img"></a>
             </div>
-            <img src="./img/photo.png" alt="Nataliia Kovaliv" class="about__photo">
-        </header>
-        <main class="main">
-            <section class="info">
-                <h2 class="info__title">Contacts</h2>
-                <div class="info__content">
-                    <div class="contacts">
-                        <ul class="contacts__list">
-                            <li class="contacts__item">
-                                <i class="bi bi-telephone-fill"></i>
-                                <a class="contacts__link" href="tel:+380633160073">+38 (063) 316 00 73</a>
-                            </li>
-                            <li class="contacts__item">
-                                <i class="bi bi-envelope-fill"></i>
-                                <a class="contacts__link"
-                                    href="mailto:nataliiakovaliv95@gmail.com">nataliiakovaliv95@gmail.com</a>
-                            </li>
-                            <li class="contacts__item">
-                                <i class="bi bi-telegram"></i>
-                                <a class="contacts__link" href="https://t.me/nataliia_kovaliv">Telegram</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="info">
-                <h2 class="info__title">Experience</h2>
-                <div class="info__content">
-                    <article class="job">
-                        <h6 class="job__description">
-                            I have no commercial experience, but you can look at my projects on <a
-                                href="https://github.com/KovalivNataliia">GitHub</a>
-                        </h6>
-                    </article>
-                </div>
-            </section>
-            <section class="info">
-                <h2 class="info__title">Education</h2>
-                <div class="info__content">
-                    <article class="study">
-                        <h3 class="study__title">Ivan Franko National University of Lviv | 2013 - 2019</h3>
-                        <p class="study__description">
-                            Master of Music degree
-                        </p>
-                    </article>
-                </div>
-            </section>
-            <section class="info">
-                <h2 class="info__title">Skills</h2>
-                <div class="info__content">
-                    <div class="skills">
-                        <ul class="skills__list">
-                            <li class="skills__item">HTML5</li>
-                            <li class="skills__item">CSS3</li>
-                            <li class="skills__item">Sass (SCSS)</li>
-                        </ul>
-                        <ul class="skills__list">
-                            <li class="skills__item">BEM</li>
-                            <li class="skills__item">JavaScript</li>
-                            <li class="skills__item">basics of Python</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="info">
-                <h2 class="info__title">Tools</h2>
-                <div class="info__content">
-                    <div class="tools">
-                        <ul class="tools__list">
-                            <li class="tools__item">Visual Studio Code</li>
-                            <li class="tools__item">Photoshop</li>
-                            <li class="tools__item">Figma</li>
-                        </ul>
-                        <ul class="tools__list">
-                            <li class="tools__item">GIT</li>
-                            <li class="tools__item">Postman</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="info">
-                <h2 class="info__title">Languages</h2>
-                <div class="info__content">
-                    <div class="languages">
-                        <ul class="languages__list">
-                            <li class="languages__item"><strong>Ukraine</strong> - Native</li>
-                            <li class="languages__item"><strong>Russian</strong> - Native</li>
-                            <li class="languages__item"><strong>English</strong> - Intermediate</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="info">
-                <h2 class="info__title">Additional<br>courses</h2>
-                <div class="info__content">
-                    <article class="courses">
-                        <h3 class="courses__title">Green Forest</h3>
-                        <p class="courses__description">
-                            Started in 2020 up to present
-                        </p>
-                    </article>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__item">
-                <a href="https://github.com/KovalivNataliia">GitHub</a>
+            <div>
+              <h4 class="experience__exemple-title">Landing page</h4>
+              <h6 class="experience__exemple-description">
+                HTML/CSS
+              </h6>
+              <a href="https://github.com/KovalivNataliia/luxestate" target="_blank" class="experience__exemple-btn">View code</a>
             </div>
-            <div class="footer__item">
-                <p>© Kovaliv Nataliia 2021</p>
+          </div>
+          <div class="experience__exemple">
+            <div>
+              <a href="https://js-clock-rsschool.netlify.app/" target="_blank"><img src="./img/exemple2.png" alt="exemple" class="experience__exemple-img"></a>
             </div>
-            <div class="footer__item">
-                <img src="./img/rs_school_js.svg" alt="logo">
+            <div>
+              <h4 class="experience__exemple-title">Clock</h4>
+              <h6 class="experience__exemple-description">
+                HTML/CSS/JavaScript
+              </h6>
+              <a href="https://github.com/KovalivNataliia/js-clock" target="_blank" class="experience__exemple-btn">View code</a>
             </div>
-            <div class="footer__item">
-                <a href="https://rs.school/js/">Курс «JavaScript/Front-end»</a>
+          </div>
+          <div class="experience__exemple">
+            <div>
+              <a href="https://whack-a-mole-rsschool.netlify.app/" target="_blank"><img src="./img/exemple3.png" alt="exemple" class="experience__exemple-img"></a>
             </div>
-        </footer>
-    </div>
+            <div>
+              <h4 class="experience__exemple-title">Mini game</h4>
+              <h6 class="experience__exemple-description">
+                HTML/CSS/JavaScript
+              </h6>
+              <a href="https://github.com/KovalivNataliia/whack-a-mole" target="_blank" class="experience__exemple-btn">View code</a>
+            </div>
+          </div>
+          <div class="experience__exemple">
+            <div>
+              <a href="https://3d-viewer-test-task.netlify.app/" target="_blank"><img src="./img/exemple4.png" alt="exemple" class="experience__exemple-img"></a>
+            </div>
+            <div>
+              <h4 class="experience__exemple-title">3D viewer</h4>
+              <h6 class="experience__exemple-description">
+                JavaScript(three.js)
+              </h6>
+              <a href="https://github.com/KovalivNataliia/3d-viewer" target="_blank" class="experience__exemple-btn">View code</a>
+            </div>
+          </div>
+        </div>
+        <div class="experience__codewars">
+          <p class="experience__codewars-text">
+            Also, I like to solve katas on <a href="https://www.codewars.com/" target="_blank">Codewars<img src="./img/katana.png" alt="icon"></a>
+          </p>
+          <img src="https://www.codewars.com/users/KovalivNataliia/badges/large" alt="codewars" class="experience__codewars-img">
+          <p class="experience__codewars-text">This is exemple how I solved the <a href="https://www.codewars.com/kata/54b42f9314d9229fd6000d9c" target="_blank">Duplicate Encoder</a> kata:</p>
+          <pre class="experience__codewars-code">
+            <code class="javascript">
+      function duplicateEncode(word){
+
+        let arr = word.toLowerCase().split('');
+
+        let obj = arr.reduce((acc, el) => {
+          acc[el] = (acc[el] || 0) + 1;
+          return acc;
+        }, {});
+
+        return arr.map(el => obj[el] === 1 ? '(' : ')').join('');
+      }
+            </code>
+          </pre>
+        </div>
+      </section>
+      <section class="education" id="education">
+        <h3 class="education__title title">Education</h3>
+        <div class="education__description">
+          <h3 class="education__description-title">Ivan Franko National University of Lviv | 2013 - 2019</h3>
+          <h5 class="education__description-text">Master of Music degree</h5>
+        </div>
+        <div class="education__description">
+          <h3 class="education__description-title">Green Forest | 2020</h3>
+          <h5 class="education__description-text">English courses</h5>
+        </div>
+        <div class="education__description">
+          <h3 class="education__description-title">The Rolling Scopes School | 2021</h3>
+          <h5 class="education__description-text">JavaScript/Front-end</h5>
+          <a href="https://app.rs.school/certificate/fmds0gfp" target="_blank" class="education__description-certificate">Certificate<img src="./img/certificate.png" alt="icon"></a>
+        </div>
+      </section>
+      <section class="languages" id="languages">
+        <h3 class="languages__title title">Languages</h3>
+        <ul class="languages__list">
+          <li class="languages__item"><span>Ukrainian</span> - Native</li>
+          <li class="languages__item"><span>Russian</span> - Native</li>
+          <li class="languages__item"><span>English</span> - Intermediate</li>
+        </ul>
+      </section>
+    </main>
+    <p class="wave">Lorem isum dolor sit amet, consectetur adiisicin elit. Lorem isum dolor sit amet, consectetur aaa.</p>
+    <footer class="footer">
+      <div class="footer__item-one item">
+          <a href="https://github.com/KovalivNataliia" target="_blank">GitHub</a>
+      </div>
+      <div class="footer__item-two item">
+          <p>© Kovaliv Nataliia 2021</p>
+      </div>
+      <div class="footer__item-three item">
+          <img src="./img/rs_school_js.svg" alt="logo">
+      </div>
+      <div class="footer__item-four item">
+          <a href="https://rs.school/js/" target="_blank">Course «JavaScript/Front-end»</a>
+      </div>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
 </body>
 
 </html>
