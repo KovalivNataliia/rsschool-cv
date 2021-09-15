@@ -441,11 +441,6 @@ a {
   line-height: 24px;
 }
 
-.experience__description a {
-  font-style: italic;
-  font-weight: 700;
-}
-
 .experience__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,6 +522,12 @@ a {
 
 .experience__codewars a {
   font-weight: 700;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.experience__codewars a:hover {
+  text-shadow: #177245 1px 0 10px;
 }
 
 .experience__codewars-text {
