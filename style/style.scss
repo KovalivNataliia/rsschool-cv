@@ -199,6 +199,23 @@ a {
   &__text {
     font-size: 16px;
     line-height: 24px;
+    margin: 0 0 30px 0;
+    img {
+      width: 25px;
+    }
+  }
+  &__video {
+    width: 554px;
+    border: 3px solid $border-color;
+    border-radius: 10px;
+    @media screen and (max-width: 768px) {
+      width: 384px;
+      height: 219px;
+    }
+    @media screen and (max-width: 425px) {
+      width: 260px;
+      height: 200px;
+    }
   }
 }
 
