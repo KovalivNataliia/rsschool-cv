@@ -139,17 +139,19 @@
           <p class="experience__codewars-text">This is exemple how I solved the <a href="https://www.codewars.com/kata/54b42f9314d9229fd6000d9c" target="_blank">Duplicate Encoder</a> kata:</p>
           <pre class="experience__codewars-code">
             <code class="javascript">
-      function duplicateEncode(word){
+function duplicateEncode(word) {
 
-        let arr = word.toLowerCase().split('');
+  let arr = word.toLowerCase().split('');
 
-        let obj = arr.reduce((acc, el) => {
-          acc[el] = (acc[el] || 0) + 1;
-          return acc;
-        }, {});
+  let obj = arr.reduce((acc, el) => {
+    acc[el] = (acc[el] || 0) + 1;
+    return acc;
+  }, {});
 
-        return arr.map(el => obj[el] === 1 ? '(' : ')').join('');
-      }
+  let result = arr.map(el => obj[el] === 1 ? '(' : ')')
+
+  return result.join('');
+}
             </code>
           </pre>
         </div>
