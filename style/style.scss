@@ -381,7 +381,17 @@ a {
   &__codewars-code {
     code {
       border-radius: 10px;
+      padding: 10px 0 10px 30px;
       max-width: 550px;
+      @media screen and (max-width: 768px) {
+        padding: 10px;
+        font-size: 12px;
+      }
+      @media screen and (max-width: 425px) {
+        white-space: pre-wrap;
+        word-break: break-all;
+        font-size: 10px;
+      }
     }
   }
 }
